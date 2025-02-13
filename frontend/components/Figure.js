@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledFigure = styled.figure`
   padding: 1rem;
+  min-width: 100%;
   max-width: 100%;
   border: 3px dotted dimgrey;
   border-radius: 21px;
@@ -10,6 +11,11 @@ const StyledFigure = styled.figure`
 
   figcaption {
     font-style: italic;
+  }
+
+  img {
+  min-width: 100%;
+  max-width: 100%
   }
 `;
 export default function Figure({ image, author, date, media_type }) {
