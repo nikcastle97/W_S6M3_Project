@@ -1,6 +1,5 @@
 import React from 'react';
 import Figure from './Figure';
-import { Alert } from 'reactstrap';
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
