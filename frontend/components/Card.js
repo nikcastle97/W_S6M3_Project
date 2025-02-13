@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const StyledCard = styled.div`
   color: white;
   background-color: black;
-  border: 1px solid white;
+  border: 1.3px solid white;
   border-radius: 21px;
   padding: 2rem;
 
@@ -17,17 +17,17 @@ const StyledCard = styled.div`
   }
 
   p {
-    margin: 0 0 0.6rem 0;
-
+  font-size: .9rem;
+    margin: 0 0 0.rem 0;
     &::first-line {
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
   }
 `
-export default function Card({ title, text, image, author, date, media_type }) {
+export default function Card({ title, text, image, author, date, media_type, selected }) {
   console.log('m type: ', media_type)
   return (
-    <StyledCard $color='white' className='card'>
+    <StyledCard $color='white' className='card' onClick={selected}>
       <h2>{title}</h2>
       <p>{text}</p>
       <Figure image={image} author={author} date={date} media_type={media_type}/>
