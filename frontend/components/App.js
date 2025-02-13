@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Alert } from 'reactstrap';
 import Card from './Card';
 
 const api_key = 'U9KoOEzH9seOzI4C1Pg5cCNwTFKWH1phGJDy41sH'

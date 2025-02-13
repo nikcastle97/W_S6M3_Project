@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const StyledFigure = styled.figure`
   padding: 1rem;
@@ -15,15 +15,15 @@ const StyledFigure = styled.figure`
 export default function Figure({ image, author, date, media_type }) {
   return (
     <StyledFigure>
-      {media_type === "video" ? (
-        <div className="video-responsive">
+      {media_type === 'video' ? (
+        <div className='video-responsive'>
           <iframe
-            width="100%"
-            height="480"
+            width='100%'
+            height='480'
             src={`${image}?autoplay=1&mute=1`}
-            allow="autoplay; fullscreen"
-            allowFullScreen="true"
-            title="Embedded youtube"
+            allow='autoplay; fullscreen'
+            allowFullScreen='true'
+            title='Embedded YouTube'
           />
           <figcaption>
             The Photo of the Day by {author} on {date}
